@@ -10,11 +10,6 @@ type FileMeta = {
   lastModified?: string;
 };
 
-export const metadata = {
-  title: "FileDrop",
-  description: "Compartilhe arquivos rapidamente entre dispositivos via web.",
-};
-
 export default function Home() {
   const [files, setFiles] = useState<FileList | null>(null);
   const [filesList, setFilesList] = useState<FileMeta[]>([]);
