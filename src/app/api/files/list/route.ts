@@ -6,7 +6,7 @@ export const runtime = "nodejs";
 
 export async function GET() {
   try {
-    const uploadDir = path.join(process.cwd(), "tmp", "uploads");
+    const uploadDir = path.join("/tmp", "uploads");
 
     if (!fs.existsSync(uploadDir)) {
       return NextResponse.json({ files: [] });

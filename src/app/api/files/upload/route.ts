@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: "No files selected" }, { status: 400 });
   }
 
-  const uploadDir = path.join("tmp", "uploads");
+  const uploadDir = path.join("/tmp", "uploads");
   if (!fs.existsSync(uploadDir)) {
     fs.mkdirSync(uploadDir, { recursive: true });
   }
@@ -31,7 +31,7 @@ export async function POST(request: Request) {
 }
 
 const getFilesNames = async (): Promise<string[]> => {
-  const uploadDir = path.join("tmp", "uploads");
+  const uploadDir = path.join("/tmp", "uploads");
   if (!fs.existsSync(uploadDir)) {
     return []
   }

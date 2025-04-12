@@ -10,7 +10,7 @@ export async function GET(request: Request) {
         return NextResponse.json({ message: "File name is required" }, { status: 400 });
     }
 
-    const uploadDir = path.join("tmp", "uploads");
+    const uploadDir = path.join("/tmp", "uploads");
 
     const filePath = path.join(uploadDir, fileName);
 

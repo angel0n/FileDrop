@@ -1,6 +1,7 @@
 # 📦 FileDrop
 
-![Logo](./logo.png)
+<img src="./logo.png" alt="FileDrop Logo" width="200" />
+
 
 **FileDrop** é um sistema web minimalista para **transferência rápida de arquivos** entre dispositivos. Faça upload de um arquivo no seu celular e baixe no seu computador — simples assim.
 
