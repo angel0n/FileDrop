@@ -1,6 +1,6 @@
 # 📦 FileDrop
 
-![Logo](./public/logo.png)
+![Logo](./logo.png)
 
 **FileDrop** é um sistema web minimalista para **transferência rápida de arquivos** entre dispositivos. Faça upload de um arquivo no seu celular e baixe no seu computador — simples assim.
 
@@ -17,10 +17,36 @@
 - 📤 Upload de múltiplos arquivos direto do navegador
 - 📥 Download rápido no mesmo navegador ou em outro dispositivo
 - 🗑️ Exclusão manual de arquivos
-- 💾 Armazenamento temporário em SQLite no diretório `/tmp`
-- ⚙️ Totalmente serverless, ideal para deploy no Vercel
+- 💾 Armazenamento temporário dos arquivos
+
 
 ---
 
-## 📁 Estrutura do projeto
+## 🛠️ Tecnologias
+
+- [Next.js](https://nextjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com)
+
+---
+
+## ⚠️ Observações
+
+- Os arquivos são armazenados temporariamente em `/tmp`, ou seja:
+  - Eles são descartados após alguns minutos de inatividade (em ambientes serverless como Vercel)
+  - Útil apenas para transferências rápidas
+- Sem autenticação: qualquer um com o link pode ver e baixar os arquivos
+
+---
+
+## 📦 Instalação local
+
+```bash
+git clone https://github.com/seu-usuario/filedrop.git
+cd filedrop
+npm install
+npm run dev
+```
+
+Acesse: `http://localhost:3000`
 
