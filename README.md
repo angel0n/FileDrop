@@ -7,12 +7,6 @@
 
 ---
 
-## 🚀 Demonstração
-
-> (Coloque aqui o link para o deploy na Vercel, Netlify ou outro serviço)
-
----
-
 ## ✨ Funcionalidades
 
 - 📤 Upload de múltiplos arquivos direto do navegador
